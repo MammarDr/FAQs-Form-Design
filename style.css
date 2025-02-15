@@ -1,0 +1,114 @@
+:root {
+    --primary-white : hsl(0, 0%, 100%);
+    --primary-pink : hsl(275, 100%, 97%);
+    --primary-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    --weird-color: papayawhip;
+}
+
+@font-face {
+    font-family: 'Work Sans'; 
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype'); 
+    font-weight: 100 900; 
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.wrapper {
+    background-color: var(--primary-pink);
+    height: 100%;
+    width: 100%;
+}
+
+.svg_cover {
+    height: 200px;
+    object-fit: cover;
+    width: inherit;
+}
+
+
+#form {
+    width: 50%;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--primary-white);
+    border-radius: 10px;
+}
+
+#form .faq  {
+    column-gap: 10px;
+    margin-bottom: 1rem;
+}
+
+#form .faq h1 {
+    color: var(--dark-purple);
+}
+#form .faq img {
+    width: 25px;
+}
+
+#form .questions {
+    border-width: 1.5px 0px;
+    border-style: solid;
+    border-color: var(--primary-pink);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.row:hover   {
+    color: hsl(292deg 54.15% 32.28%);
+}
+
+.row p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row img {
+    
+}
+
+
+.description {
+    padding: 10px 0;
+}
+
+.description p {
+    color: hsl(292deg 54.15% 32.28% / 71%);
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
